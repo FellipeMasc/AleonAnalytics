@@ -56,3 +56,12 @@
 
 - Pode-se analisar que todos os partidos tem uma participação relevante nas votações, acima de 90%, sendo os partidos NOVO, PSB, PSDB e REPUBLICANOS os que acumulam 100% de participação.
   ![Participação em votação](porcentagem_participacao_partido.png)
+
+5. Problemas de análise não resolvidos:
+
+- Poderia-se ter feito uma análise do tipo de assunto geral e específico que cada partido mais legisla, fazendo a ligação com a proximidade dos partidos mas a api não retorna na lista de matérias em tramitação o código de assunto geral, deveria ser feito requests separadas, podendo levar a rate limit exceeded.
+
+- Poderia-se também realizar consultas a api dos deputados, fazendo alguma correlação dos senadores e deputados de cada partido.
+
+- Poderia-se também realizar a ligação dos gastos de cada senador e seus partidos, mas a api não retorna esses valores, aparece o erro ` Maximum call stack size exceeded`
+  ![Erro chamada API](chamada_orcamento.png)
